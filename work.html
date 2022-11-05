@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>TOMATO | Home</title>
+<style>
+        html,body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #header-img{
+            position: relative;
+            width:100vw;
+            height:600px;
+            background-image:linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('https://images.alphacoders.com/519/519509.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            width:100vw;
+            height:60px;
+        }
+        .nav-menu{
+            width:60vw;
+            height:60px;
+        }
+        .tomato{
+            display: block;
+            font-weight: bolder;
+            color:white;
+            text-align: center;
+            font-size: 68px;
+            margin:0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .header-flex{
+            margin-top: 100px;
+        }
+        .nav-link{
+            border-bottom: 0px solid black;
+            transition: border-bottom 0.3s;
+            cursor: pointer;
+        }
+        .nav-link:hover{
+            border-bottom: 5px solid white;
+        }
+        .search-box{
+            width:30vw;
+            height:60px;
+            background-color: white;
+            border:none;
+            border-top-left-radius:20px ;
+            border-bottom-left-radius: 20px;
+            padding-left: 20px;
+            outline:none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .search-btn{
+            width: 130px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #second-section{
+            margin-top:50px;
+            margin-bottom: 50px;
+        }
+        .card{
+            width:100%;
+            height:200px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #ccc;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            margin-bottom: 10px;
+        }
+        .card:hover{
+            box-shadow: 1px 1px 10px #000;
+            cursor:pointer;
+        }
+        .card-bottom{
+            position: absolute;
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            margin-top: 150px;
+        }
+        #popular-locations{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .popular-heading{
+            font-size: 40px;
+            color: black;
+        }
+        .locations-div{
+            width:100%;
+            height:60px;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .locations-div:hover{
+            box-shadow: 1px 1px 5px #ccc;
+        }
+        @media screen and (max-width: 1000px) {
+            .items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-img">
+        <header>
+            <div class="d-flex justify-content-center">
+                <div class="nav-menu">
+                        <p class="float-left text-white m-0 mt-3 h4 nav-link">Get the app</p>
+                        <p class="float-right text-white m-0 mt-3 h4 nav-link">Sign up</p>
+                        <p class="float-right mr-4 text-white m-0 mt-3 h4 nav-link">Login</p>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="d-flex justify-content-center header-flex">
+                <p class="tomato">Tomato</p>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <input type="text" placeholder="Search for dishes or cuisines..." class="search-box"/>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://wallpapersdsc.net/wp-content/uploads/2016/09/Junk-Food-Pictures.jpg"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Order Online</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://media.architecturaldigest.in/wp-content/uploads/2019/10/Mumbai-Best-Biryani-Awadhi-gosht-chap-biryani-at-Ummrao.jpg"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Enjoy your meal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://www.fsdbco.com/wp-content/uploads/2019/01/online-food-ordering-2.jpg"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Order Again</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://epsteinandwhite.com/wp-content/uploads/2020/06/stay-safe-1024x646.jpg"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Stay Safe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="popular-locations">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <p class="popular-heading">Popular locations in and around <span class="font-weight-bold">Chennai</span></p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">ECR</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">T.Nagar</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">Anna Nagar</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">Mylapore</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">Velachery</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">Chrompet</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>    
